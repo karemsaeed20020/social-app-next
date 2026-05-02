@@ -1,0 +1,39 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.removeUnusedImports": "always",
+    "source.organizeImports": "always",
+    "source.fixAll": "always",
+    "source.fixAll.sortJSON": "always",
+    "source.sortImports": "always",
+    "source.sortImports.order": "always",
+    "source.fixAll.eslint": "always"
+  },
+  "editor.formatOnSave": true,
+  "editor.wordWrap": "on",
+  "editor.wordWrapColumn": 100,
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#3a0f1a",
+    "activityBar.background": "#2a0f16",
+    "activityBar.foreground": "#ffd6de",
+    "activityBar.inactiveForeground": "#ffd6de99",
+    "activityBar.border": "#7a1c2e",
+    "activityBarBadge.background": "#ffd6de",
+    "activityBarBadge.foreground": "#000000",
+    "badge.background": "#5a1423",
+    "badge.foreground": "#ffd6de",
+    "commandCenter.border": "#7a1c2e",
+    "sash.hoverBorder": "#ff4d6d",
+    "statusBar.background": "#3a0f1a",
+    "statusBar.foreground": "#ffd6de",
+    "statusBarItem.hoverBackground": "#7a1c2e",
+    "statusBarItem.remoteBackground": "#3a0f1a",
+    "statusBarItem.hoverForeground": "#ffd6de",
+    "statusBarItem.remoteHoverBackground": "#7a1c2e",
+    "statusBarItem.remoteForeground": "#ffd6de",
+    "titleBar.activeBackground": "#3a0f1a",
+    "titleBar.inactiveBackground": "#2a0f16",
+    "titleBar.activeBorder": "#ff4d6d",
+    "titleBar.activeForeground": "#ffd6de",
+    "titleBar.inactiveForeground": "#ffd6de99"
+  }
+}
