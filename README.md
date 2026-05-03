@@ -95,4 +95,25 @@
 - **English (en)** — Full English language support.
 - **Arabic (ar)** — Full Arabic language support with RTL layout.
 - **Locale-Based Routing** — URL-based locale prefix (`/en/...`, `/ar/...`).
+### 🎨 UI/UX
 
+- **Dark & Light Themes** — Full theme support with `next-themes`.
+- **Responsive Design** — Mobile-first responsive layout with 3-column desktop grid.
+- **Skeleton Loaders** — Smooth loading states across all pages.
+- **Toast Notifications** — User feedback with `sonner` toast messages.
+- **Glassmorphism Navbar** — Sticky navbar with backdrop blur effect.
+- **Infinite Scrolling** — Seamless content loading with `react-intersection-observer`.
+- **State Screens** — Reusable empty, error, and loading state components.
+
+---
+
+## 🛠️ Tech Stack
+
+### Core Framework
+
+| Technology       | Version | Description                     |
+| ---------------- | ------- | ------------------------------- |
+| **Next.js**      | 16.1.6  | React framework with App Router |
+| **React**        | 19.2.4  | UI library                      |
+| **TypeScript**   | 5.9.3   | Type-safe JavaScript            |
+| **Tailwind CSS** | 4.2.1   | Utility-first CSS framework     |
