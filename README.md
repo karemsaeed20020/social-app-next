@@ -39,3 +39,16 @@
 - **Logout** — Session-based logout with cookie management.
 - **Change Password** — Update password from the settings page.
 - **Route Protection** — Middleware-based protection for authenticated and guest routes.
+
+- ### 📰 Feed & Posts
+
+- **News Feed** — Infinite scrolling feed with paginated posts.
+- **Create Post** — Create posts with text and/or image, with privacy level selection (`Public`, `Following`, `Only Me`).
+- **Edit & Delete Posts** — Full CRUD operations on your own posts.
+- **Like & Unlike Posts** — Toggle like on any post.
+- **Bookmark Posts** — Save posts for later viewing.
+- **Share Posts** — Share/repost other users' posts with your own comment.
+- **Post Privacy Filters** — Filter feed by `All`, `Following`, `My Posts`, or `Saved` posts.
+- **Single Post View** — Dedicated page for viewing a single post with all its details.
+- **Image Lightbox** — Full-screen image viewer for post images.
+- **Emoji Picker** — Rich emoji input for comments and posts
