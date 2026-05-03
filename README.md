@@ -75,3 +75,24 @@
 - **Follow / Unfollow Users** — Toggle follow status on any user.
 - **Search Users** — Search for users by name with debounced input.
 - **User Profiles** — View detailed profiles of other users.
+
+### 🔔 Notifications
+
+- **Real-Time Notification Count** — Unread notification badge in the navbar.
+- **Notification List** — View all notifications with infinite scrolling.
+- **Mark as Read** — Mark individual notifications as read.
+- **Mark All as Read** — Bulk mark all notifications as read.
+- **Notification Types** — Supports likes, comments, follows, and shares.
+
+### ⚙️ Settings
+
+- **Change Password** — Secure password change form with validation.
+- **Theme Toggle** — Switch between Dark and Light mode.
+- **Language Switch** — Switch between English and Arabic.
+
+### 🌍 Internationalization
+
+- **English (en)** — Full English language support.
+- **Arabic (ar)** — Full Arabic language support with RTL layout.
+- **Locale-Based Routing** — URL-based locale prefix (`/en/...`, `/ar/...`).
+
