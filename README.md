@@ -117,3 +117,54 @@
 | **React**        | 19.2.4  | UI library                      |
 | **TypeScript**   | 5.9.3   | Type-safe JavaScript            |
 | **Tailwind CSS** | 4.2.1   | Utility-first CSS framework     |
+
+
+### State & Data Management
+
+| Package                   | Description                             |
+| ------------------------- | --------------------------------------- |
+| **@tanstack/react-query** | Server state management & data fetching |
+| **react-hook-form**       | Performant form handling                |
+| **zod**                   | Schema-based form validation            |
+| **js-cookie**             | Cookie-based token management           |
+
+### UI Components & Styling
+
+| Package                       | Description                           |
+| ----------------------------- | ------------------------------------- |
+| **Radix UI**                  | Accessible, unstyled UI primitives    |
+| **shadcn/ui**                 | Pre-built components (New York style) |
+| **Lucide React**              | Beautiful icon library                |
+| **class-variance-authority**  | Component variant management          |
+| **clsx** + **tailwind-merge** | Conditional class utilities           |
+| **tw-animate-css**            | Tailwind animation utilities          |
+
+### Internationalization & Theming
+
+| Package         | Description                           |
+| --------------- | ------------------------------------- |
+| **next-intl**   | Full i18n support with locale routing |
+| **next-themes** | Dark/Light theme management           |
+
+### Media & Interaction
+
+| Package                         | Description                  |
+| ------------------------------- | ---------------------------- |
+| **yet-another-react-lightbox**  | Full-screen image lightbox   |
+| **emoji-picker-react**          | Emoji picker for text inputs |
+| **react-intersection-observer** | Infinite scroll detection    |
+| **react-day-picker**            | Date picker component        |
+| **sonner**                      | Toast notification system    |
+
+### Developer Tools
+
+| Package                             | Description                      |
+| ----------------------------------- | -------------------------------- |
+| **@tanstack/react-query-devtools**  | React Query debugging tools      |
+| **ESLint** + **eslint-config-next** | Code linting                     |
+| **knip**                            | Unused dependency detection      |
+| **git-cz**                          | Conventional commits             |
+| **rimraf**                          | Cross-platform directory cleanup |
+
+---
+
