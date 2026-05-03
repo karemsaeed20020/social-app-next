@@ -289,3 +289,89 @@ Navigate to [http://localhost:3000](http://localhost:3000) to view the applicati
 > The app will automatically redirect to the default locale (`/en/login` or `/en/feed` based on auth status).
 
 ---
+
+## 📜 Available Scripts
+
+| Script   | Command       | Description                                      |
+| -------- | ------------- | ------------------------------------------------ |
+| `dev`    | `yarn dev`    | Start dev server with Turbopack (clears `.next`) |
+| `build`  | `yarn build`  | Create production build                          |
+| `start`  | `yarn start`  | Start production server                          |
+| `lint`   | `yarn lint`   | Run ESLint checks                                |
+| `commit` | `yarn commit` | Create conventional commit with `git-cz`         |
+
+---
+
+## 🌍 Internationalization (i18n)
+
+The app uses **next-intl** for full internationalization support:
+
+- **Supported Locales**: `en` (English), `ar` (Arabic)
+- **Default Locale**: `en`
+- **RTL Support**: Arabic locale automatically switches to RTL layout
+- **URL Structure**: `/{locale}/...` (e.g., `/en/feed`, `/ar/feed`)
+- **Translation Files**: Located at `src/core/messages/en.ts` and `src/core/messages/ar.ts`
+
+All text in the application is fully translatable, including:
+
+- Navigation labels
+- Form labels & validation messages
+- Error messages & empty states
+- Button labels & tooltips
+- Notification content
+
+---
+
+## 🎨 Theming
+
+The app supports **Dark** and **Light** themes using `next-themes`:
+
+- Theme preference is persisted across sessions
+- Seamless switching via the settings sidebar or settings page
+- All components respect the active theme through CSS variables
+- Uses Tailwind CSS dark mode utilities
+
+---
+
+## 🔐 Authentication & Middleware
+
+### Authentication Flow
+
+1. Users sign up or log in via the auth pages.
+2. A JWT token is stored as a cookie (`token`).
+3. The token is automatically attached to all API requests via `clientApiFetch`.
+4. User data is retrieved from the token using `js-cookie`.
+
+### Middleware (`proxy.ts`)
+
+The middleware handles:
+
+- **Protected Routes**: Redirects unauthenticated users to `/login` (e.g., `/feed`).
+- **Guest Routes**: Redirects authenticated users away from `/login` and `/signup`.
+- **Locale Detection**: Applies the correct locale from the URL.
+- **i18n Middleware**: Integrates `next-intl` middleware for locale-based routing.
+
+---
+
+## 📦 Key Packages
+
+| Package                 | Purpose                                                                      |
+| ----------------------- | ---------------------------------------------------------------------------- |
+| `next`                  | Full-stack React framework with App Router, Server Components, and Turbopack |
+| `react-hook-form`       | Performant, flexible form handling with minimal re-renders                   |
+| `zod`                   | TypeScript-first schema validation for forms and API data                    |
+| `@tanstack/react-query` | Powerful server state management, caching, and synchronization               |
+| `next-intl`             | Complete internationalization with locale routing and translations           |
+| `next-themes`           | Theme management for dark/light mode with system preference support          |
+| `radix-ui`              | Accessible, composable UI primitives                                         |
+| `lucide-react`          | Comprehensive, customizable icon library                                     |
+| `sonner`                | Elegant toast notifications                                                  |
+| `emoji-picker-react`    | Feature-rich emoji picker component                                          |
+| `date-fns`              | Lightweight date utility library                                             |
+| `@vercel/analytics`     | Web analytics for performance monitoring                                     |
+
+---
+
+<p align="center">
+  Built with ❤️ using Next.js, React, and TypeScript
+</p>
