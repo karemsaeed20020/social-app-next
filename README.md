@@ -16,3 +16,26 @@
 </p>
 
 ---
+## 📑 Table of Contents
+
+- [✨ Features](#-features)
+- [🛠️ Tech Stack](#️-tech-stack)
+- [📁 Project Structure](#-project-structure)
+- [🚀 Getting Started](#-getting-started)
+- [📜 Available Scripts](#-available-scripts)
+- [🌍 Internationalization (i18n)](#-internationalization-i18n)
+- [🎨 Theming](#-theming)
+- [🔐 Authentication & Middleware](#-authentication--middleware)
+- [📦 Key Packages](#-key-packages)
+
+---
+
+## ✨ Features
+
+### 🔐 Authentication
+
+- **Login** — Secure sign-in with form validation.
+- **Signup** — User registration with full validation.
+- **Logout** — Session-based logout with cookie management.
+- **Change Password** — Update password from the settings page.
+- **Route Protection** — Middleware-based protection for authenticated and guest routes.
