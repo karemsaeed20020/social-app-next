@@ -167,4 +167,125 @@
 | **rimraf**                          | Cross-platform directory cleanup |
 
 ---
+## 📁 Project Structure
 
+```
+social-app-next/
+├── public/                        # Static assets (logo, images)
+├── src/
+│   ├── app/
+│   │   └── [locale]/              # Locale-based routing (en, ar)
+│   │       ├── (auth)/            # Auth pages (login, signup)
+│   │       │   ├── login/
+│   │       │   └── signup/
+│   │       ├── (main)/            # Main app layout with navbar & sidebars
+│   │       │   ├── feed/
+│   │       │   ├── posts/         # Single post page
+│   │       │   ├── profile/
+│   │       │   ├── user/          # Other user profiles
+│   │       │   ├── notifications/
+│   │       │   ├── settings/
+│   │       │   └── suggested-friends/
+│   │       └── layout.tsx         # Root layout with providers
+│   │
+│   ├── core/                      # Core app configuration
+│   │   ├── constants/             # API endpoints & route constants
+│   │   ├── i18n/                  # Internationalization config & routing
+│   │   ├── lib/                   # Utilities (API fetch, time formatting)
+│   │   ├── messages/              # Translation files (en.ts, ar.ts)
+│   │   └── providers/             # React Query provider
+│   │
+│   ├── features/                  # Feature-based modules
+│   │   ├── auth/                  # Authentication (login, signup, shared)
+│   │   │   ├── login/             # Login form, hook, schema, service
+│   │   │   ├── signup/            # Signup form, hook, schema, service
+│   │   │   └── shared/            # Shared auth components & utilities
+│   │   │
+│   │   ├── feed/                  # Feed & posts feature
+│   │   │   ├── components/        # Post card, creator, comments, sidebars
+│   │   │   ├── hooks/             # Posts, comments, users hooks
+│   │   │   ├── models/            # Post, Comment, SharedPost types
+│   │   │   ├── schemas/           # Zod validation schemas
+│   │   │   ├── services/          # API service functions
+│   │   │   └── constants/         # Feed-specific constants
+│   │   │
+│   │   ├── profile/               # User profile feature
+│   │   │   ├── components/        # Profile header, info, stats, tabs
+│   │   │   ├── hooks/             # Profile data hooks
+│   │   │   ├── models/            # Profile types
+│   │   │   └── services/          # Profile API services
+│   │   │
+│   │   ├── notifications/         # Notifications feature
+│   │   │   ├── components/        # Notification list, item, skeleton
+│   │   │   ├── hooks/             # Notification hooks
+│   │   │   ├── models/            # Notification types
+│   │   │   └── services/          # Notification API services
+│   │   │
+│   │   └── settings/              # Settings feature
+│   │       ├── components/        # Change password form
+│   │       ├── hooks/             # Settings hooks
+│   │       └── schemas/           # Password change validation
+│   │
+│   ├── shared/                    # Shared/reusable modules
+│   │   ├── components/
+│   │   │   ├── ui/                # Base UI components (Button, Dialog, Input, etc.)
+│   │   │   ├── shared/            # Shared components (StateScreen, InfiniteList, etc.)
+│   │   │   └── layout/            # Layout components (Navbar)
+│   │   ├── hooks/                 # Shared hooks (useUserData)
+│   │   └── models/                # Global types (Locale, Direction, Privacy)
+│   │
+│   ├── globals.css                # Global styles & Tailwind config
+│   └── proxy.ts                   # Middleware (auth guards, i18n routing)
+│
+├── components.json                # shadcn/ui configuration
+├── next.config.ts                 # Next.js configuration with next-intl
+├── tailwind.config.ts             # Tailwind CSS configuration
+├── tsconfig.json                  # TypeScript configuration
+├── eslint.config.mjs              # ESLint flat config
+├── postcss.config.mjs             # PostCSS configuration
+└── package.json                   # Dependencies & scripts
+```
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- **Node.js** >= 18.x
+- **Yarn** (recommended) or npm
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Kerolos2000/social-app-next.git
+cd social-app-next
+```
+
+### 2. Install Dependencies
+
+```bash
+yarn install
+# or
+npm install
+```
+
+### 3. Run the Development Server
+
+```bash
+yarn dev
+# or
+npm run dev
+```
+
+This will start the app with **Turbopack** for fast development. The `.next` cache is automatically cleaned before each dev start.
+
+### 4. Open in Browser
+
+Navigate to [http://localhost:3000](http://localhost:3000) to view the application.
+
+> The app will automatically redirect to the default locale (`/en/login` or `/en/feed` based on auth status).
+
+---
