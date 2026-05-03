@@ -52,3 +52,26 @@
 - **Single Post View** — Dedicated page for viewing a single post with all its details.
 - **Image Lightbox** — Full-screen image viewer for post images.
 - **Emoji Picker** — Rich emoji input for comments and posts
+### 💬 Comments & Replies
+
+- **Add Comments** — Comment on any post with text and image.
+- **Edit & Delete Comments** — Modify or remove your own comments.
+- **Like Comments** — Toggle like on comments.
+- **Nested Replies** — Reply to comments with threaded conversation support.
+- **Emoji Picker** — Rich emoji input for comments and posts.
+
+### 👤 Profile
+
+- **View Profile** — View your own profile with stats (posts, followers, following).
+- **View Other Users' Profiles** — Visit any user's profile page.
+- **Update Profile Photo** — Upload and change your avatar.
+- **Update/Delete Cover Photo** — Upload a new cover or remove the existing one.
+- **Profile Tabs** — Browse user content through organized tabs.
+- **User Posts List** — View all posts by a specific user.
+
+### 👥 Social & Users
+
+- **Suggested Friends** — Discover new people to follow with suggestion cards.
+- **Follow / Unfollow Users** — Toggle follow status on any user.
+- **Search Users** — Search for users by name with debounced input.
+- **User Profiles** — View detailed profiles of other users.
